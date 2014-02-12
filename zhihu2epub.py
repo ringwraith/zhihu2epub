@@ -47,7 +47,7 @@ def collect_the_urls(collection_url):
 
 def parse_html_into_epub(urls):
 	answer_urls, epub_title = urls
-	# can't deal with encoding/decoding problem, so the title of the book is set to 'I love you'
+	# can't deal with encoding/decoding problem, so the title can't generate automatically
 	epub = zipfile.ZipFile(epub_title + '.epub', 'w')
 	epub.writestr('mimetype', 'application/epub+zip')
 	
@@ -70,7 +70,7 @@ def parse_html_into_epub(urls):
 	content_opf = '''<?xml version='1.0' encoding='utf-8'?>
 <package xmlns="http://www.idpf.org/2007/opf" unique-identifier="BookID" version="2.0">
     <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
-      <dc:title>I love you</dc:title>
+      <dc:title>BookofKnowledge</dc:title>
       <dc:creator>zhihu.com</dc:creator>
       <dc:identifier id="BookID" opf:scheme="UUID">urn:uuid:Date2014-02-12</dc:identifier>
       <dc:language>zh-CN</dc:language>
@@ -98,7 +98,7 @@ def parse_html_into_epub(urls):
     	<meta name="dtb:maxPageNumber" content="0"/>
   </head>
   <docTitle>
-    <text>I love you</text>
+    <text>BookofKnowledge</text>
   </docTitle>
   <navMap>
   	%(navPoint)s
