@@ -18,3 +18,6 @@ You can place a jpg named **cover.jpg** in the same directory with the .py file
 Due to some technical problems, the .py file can't generate the book title automatically
 The default title is '**BookofKnowledge**'
 There are two occurances of '**BookofKnowledge**'. If you want to change it, which seems to be so obvious, do change both of them into the same
+
+# demo
+see the demo epub here: http://pan.baidu.com/s/1mgK6NJa
