@@ -15,7 +15,7 @@ a * represents a digit
 You can place a jpg named **cover.jpg** in the same directory with the .py file
 
 ## the book title 
-Due to some technical problems, the .py file can't generate the book title automatically
+Due to some technical problems, the .py file can't generate the book title automatically.
 The default title is '**BookofKnowledge**'
 There are two occurances of '**BookofKnowledge**'. If you want to change it, which seems to be so obvious, do change both of them into the same
 
